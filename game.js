@@ -11,10 +11,22 @@ console.log(memoryCards instanceof Array);
 memoryCards = [...memoryCards];
 
 console.log(memoryCards instanceof Array);
-//funkca
+
+//tworzymy obiekt daty, odliczamy czas gry 
+const startTime = new Data().getTime();
+// kliknieta karta
+let activeCard = "";
+const activeCards = [];
+const gamePairs = memoryCards.length/2;
+let gameResult =  0;
+
 const clickCard = function() {
-    console.log("klik")
+   activeCard = this;
+   activeCard.classList.remove("hidden");
 };
+
+
+
 // funkcja inicjalizująca
 const initial = function() {
     //blok kodu który ma sie wykonać dla każdego diva
