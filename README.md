@@ -1,4 +1,4 @@
-# Descripe
+# Description
 
 * Simply game like a retro memory game
 * 36 pairs, 18 colours

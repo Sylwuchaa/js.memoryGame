@@ -46,8 +46,8 @@ const clickCard = function() {
                 memoryCards = memoryCards.filter(card => !card.classList.contains("off"))
                 if(gameResult == gamePairs) {
                     const endTime = new Date().getTime();
-                    const gameTime = (endTime - startTime)/1000
-                    console.log(`WYGRAŁEŚ! KONIEC GRY! :) Twój wynik to: ${gameTime} sekund`)
+                    const gameTime = (endTime - startTime) / 1000
+                    alert(`WYGRAŁEŚ! KONIEC GRY! :) Twój wynik to: ${gameTime} sekund`)
                     location.reload();
                 }
             }
